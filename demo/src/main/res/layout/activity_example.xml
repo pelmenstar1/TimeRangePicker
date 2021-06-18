@@ -24,7 +24,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:trp_thumbIconEnd="@drawable/ic_alarm"
-            app:trp_thumbIconStart="@drawable/ic_moon" />
+            app:trp_thumbIconStart="@drawable/ic_moon"
+            app:trp_startTime="3:20"/>
 
         <LinearLayout
             android:id="@+id/time_layout"
