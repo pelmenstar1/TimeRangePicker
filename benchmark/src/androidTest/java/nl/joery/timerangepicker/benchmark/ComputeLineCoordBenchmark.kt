@@ -1,4 +1,4 @@
-package com.pelmenstar.benchmark
+package nl.joery.timerangepicker.benchmark
 
 import android.graphics.PointF
 import androidx.benchmark.junit4.BenchmarkRule

@@ -1,4 +1,4 @@
-package com.pelmenstar.benchmark
+package nl.joery.timerangepicker.benchmark
 
 import android.graphics.Color
 import android.graphics.Paint

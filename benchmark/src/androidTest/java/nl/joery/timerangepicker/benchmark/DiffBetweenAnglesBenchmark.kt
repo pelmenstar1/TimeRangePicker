@@ -1,4 +1,4 @@
-package com.pelmenstar.benchmark
+package nl.joery.timerangepicker.benchmark
 
 import androidx.benchmark.junit4.BenchmarkRule
 import androidx.benchmark.junit4.measureRepeated
@@ -28,12 +28,10 @@ class DiffBetweenAnglesBenchmark {
             val angle1 = Math.toRadians(a1.toDouble())
             val angle2 = Math.toRadians(a2.toDouble())
 
-            result = Math.toDegrees(
-                atan2(
-                    cos(angle1) * sin(angle2) - sin(angle1) * cos(angle2),
-                    cos(angle1) * cos(angle2) + sin(angle1) * sin(angle2)
-                )
-            ).toFloat()
+            result = atan2(
+                    cos(angle1).toFloat() * sin(angle2).toFloat() - sin(angle1).toFloat() * cos(angle2).toFloat(),
+                    cos(angle1).toFloat() * cos(angle2).toFloat() + sin(angle1).toFloat() * sin(angle2).toFloat()
+            ) * R2D
         }
     }
 
